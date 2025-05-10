@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="auth-container">
+      <div id="login-form" class="form-container">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+      </div>
+
+      <div id="register-form" class="form-container" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+      </div>
+    </div>
+
+    <div id="todo-container" style="display: none;">
+      <h2>My To-Do List</h2>
+      <input type="text" id="todo-text" placeholder="Enter a new to-do">
+      <button onclick="addTodo()">Add To-Do</button>
+
+      <ul id="todo-list"></ul>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
