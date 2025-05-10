@@ -17,7 +17,7 @@
         <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
       </div>
 
-      <div id="register-form" class="form-container" style="display: none;">
+      <div id="register-form" class="form-container hidden">
         <h2>Register</h2>
         <input type="text" id="register-username" placeholder="Username" required>
         <input type="password" id="register-password" placeholder="Password" required>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div id="todo-container" style="display: none;">
+    <div id="todo-container" class="hidden">
       <h2>My To-Do List</h2>
       <input type="text" id="todo-text" placeholder="Enter a new to-do">
       <button onclick="addTodo()">Add To-Do</button>
